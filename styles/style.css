@@ -20,7 +20,7 @@
 
 /*Shared Styles*/
 
-body{
+main, header{
     margin: 0 auto;
     width: 1140px;
 }
@@ -165,7 +165,7 @@ nav{
   
 }
 .plant-card-items {
-  flex: 1 1 calc(25% - 20px); /* 4 cards per row, subtracting gap */
+  flex: 1 1 calc(25% - 20px); 
   
 }
 
@@ -222,8 +222,40 @@ nav{
   flex-direction: column;    
   align-items: center;     
   justify-content: center;    
-        
   text-align: center; 
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.bloom-plant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+.bloom-plant h3,
+.bloom-plant button {
+  position: relative;
+  z-index: 1;
+
+}
+
+
+.bloom-plant h3{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.bloom-plant button a{
+     font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+
 }
 
 
@@ -237,6 +269,40 @@ nav{
   align-items: center;     
   justify-content: center;    
   text-align: center; 
+  border-radius: 22px;
+  margin-top: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ana-plant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+.ana-plant h3,
+.ana-plant button {
+  position: relative;
+  z-index: 1;
+
+}
+
+.ana-plant h3{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ana-plant button a{
+     font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+
 }
 
 .zabo-plant{
@@ -249,8 +315,46 @@ nav{
   align-items: center;     
   justify-content: center;    
   text-align: center; 
+  border-radius: 22px;
+  margin-left: 28px;
+  position: relative;
+  overflow: hidden;
     
 }
+.zabo-plant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+.zabo-plant h3,
+.zabo-plant button {
+  position: relative;
+  z-index: 1;
+
+}
+
+.zabo-plant h3{
+    font-size: 2.5rem;
+      color: #fff;
+}
+.zabo-plant button a{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.deals-btn{
+    background: none;
+    border: none;
+    
+}
+
 .left-blocks{
     width: 367px;
 }
@@ -261,3 +365,105 @@ nav{
 .blocks{
     display: flex;
 }
+
+/*join section styles*/
+
+.join-sec{
+    background-image: url('../images/news-letter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.join-sec-content{
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.join-sec-content h2{
+    color: #fff;
+   margin-bottom: 23px;
+}
+
+.subscribe-box {
+  display: flex;
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #E95A08; 
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #cc5200;
+}
+
+/*main footer styles*/
+
+.main-footer{
+    margin: 0 auto;
+    width: 1140px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+.footer-items:nth-child(1) {
+  flex-basis: 40%; 
+}
+
+.footer-items:nth-child(2),
+.footer-items:nth-child(3) {
+  flex-basis: 20%; 
+}
+
+.footer-items:nth-child(4) {
+  flex-basis: 20%; 
+}
+
+.footer-social ul{
+    display: flex;
+    gap: 24px;
+   align-items: center;
+    
+}
+.footer-social ul li{
+    list-style: none;
+}
+.footer-social ul li a{
+    text-decoration: none;
+}
+
+.footer-menu-one ul, .footer-menu-two ul {
+    list-style: none;
+    
+}
+
+.footer-menu-one ul li a, .footer-menu-two ul li a{
+    text-decoration: none;
+    color: #6b7280;
+    font-family: "Inter", sans-serif;
+    
+}
+.footer-menu-one ul li, .footer-menu-two ul li{
+   
+    padding-bottom: 32px;
+}
+
