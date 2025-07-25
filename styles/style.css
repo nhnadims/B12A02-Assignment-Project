@@ -279,27 +279,23 @@ nav{
     text-align: center;
     margin-bottom: 120px;
 }
-.left-blocks{
-    width: 367px;
-}
+
 
 .blocks{
     display: flex;
 }
+
+
 .bloom-plant{
     background-image: url('../images/deal-bloom.png');
     background-repeat: no-repeat;
-    background-position: cover;
-    height: 200px;
-    margin: 0 auto;
-     display: flex;
-  flex-direction: column;    
-  align-items: center;     
-  justify-content: center;    
+    background-position: center;
+    background-size: cover;
   text-align: center; 
   border-radius: 22px;
   position: relative;
   overflow: hidden;
+  padding: 65px 60px 70px 60px;
 }
 .bloom-plant::before {
   content: "";
@@ -320,24 +316,22 @@ nav{
     font-size: 1.25rem;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .bloom-plant button a{
-     font-size: 1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;
 }
 .ana-plant{
     background-image: url('../images/deal-ana.png');
     background-repeat: no-repeat;
-    background-position: cover;
-    height: 200px;
-     display: flex;
-  flex-direction: column;    
-  align-items: center;     
-  justify-content: center;    
+    background-position: center center;
+    background-size: cover;
+   padding: 65px 60px 70px 60px;
   text-align: center; 
   border-radius: 22px;
-  margin-top: 28px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -361,6 +355,7 @@ nav{
     font-size: 1.25rem;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .ana-plant button a{
      font-size: 1rem;
@@ -447,7 +442,7 @@ nav{
 
 }
 .ana-plant, .bloom-plant{
-    margin-right: 10px;
+    background-position: cover center center;
 }
 
 }
@@ -567,9 +562,12 @@ nav{
 
 }
 
-.logo{
+.footer-logo{
     margin-bottom: 20px;
     margin-left: 35px;
+}
+.footer-logo img{
+    margin-bottom: 16px;
 }
    
 }
