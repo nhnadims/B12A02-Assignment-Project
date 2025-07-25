@@ -563,15 +563,13 @@ nav{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 16px;
+    padding-right: 16px;
 
 }
 
 .logo{
     margin-bottom: 20px;
+    margin-left: 35px;
 }
-.footer-items {
-   
-    
-  }
    
 }
