@@ -22,7 +22,7 @@
 
 main, header{
     margin: 0 auto;
-    width: 1140px;
+    max-width: 1140px;
 }
 
 section{
@@ -98,9 +98,6 @@ nav{
 .banner{
     display: flex;
     align-items: center;
-    background-image: url('../images/hero-flower.png');
-    background-position: right;
-    background-repeat: no-repeat;
     height: 461px;
     
 }
@@ -114,6 +111,53 @@ nav{
      text-transform: uppercase;
 }
 
+/*Header responsive*/
+
+@media screen and (max-width: 576px) {
+
+   .h2-styles{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+     font-family: "Noto Serif", serif;
+}
+.regular-text{
+
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: regular;
+    color: rgba(0, 0, 0, 0.5);
+}
+    section{
+        margin-top: 100px;
+    }
+    section, header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .nav-menu{
+        display: none;
+    }
+   .banner{
+    flex-direction: column-reverse;
+    height: auto;
+   }
+    .banner-img img{
+    width: 100%;
+}
+
+.banner-content{
+    width: 100%;
+    margin-top: 28px;
+}
+.banner-content h1{
+     font-family: "Noto Serif", serif;
+     font-size: 28px;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+    
+}
 
 /*plant section styles*/
 
@@ -173,6 +217,16 @@ nav{
     width: 100%;
 }
 
+/*plant section responsive*/
+
+@media screen and (max-width: 576px) {
+
+    .plant-card-items {
+  flex: 1 1 calc(50% - 20px); 
+  
+}
+}
+
 /*flower lover styles*/
 
 .flower-lover{
@@ -205,13 +259,33 @@ nav{
   right: -60px;
 }
 
+@media screen and (max-width: 576px) {
+    .flower-lover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .flower-lover-content{
+        margin-top: -50px;
+    }
+    .flower-lover-img{
+        height: 500px;
+    }
+}
+
 /*Deals Section Styles*/
 
 .deals-text-content{
     text-align: center;
     margin-bottom: 120px;
 }
+.left-blocks{
+    width: 367px;
+}
 
+.blocks{
+    display: flex;
+}
 .bloom-plant{
     background-image: url('../images/deal-bloom.png');
     background-repeat: no-repeat;
@@ -241,24 +315,17 @@ nav{
 .bloom-plant button {
   position: relative;
   z-index: 1;
-
 }
-
-
 .bloom-plant h3{
     font-size: 1.25rem;
     color: #fff;
     font-weight: 600;
 }
-
 .bloom-plant button a{
      font-size: 1rem;
     font-weight: 600;
     color: #fff;
-
 }
-
-
 .ana-plant{
     background-image: url('../images/deal-ana.png');
     background-repeat: no-repeat;
@@ -274,7 +341,6 @@ nav{
   position: relative;
   overflow: hidden;
 }
-
 .ana-plant::before {
   content: "";
   position: absolute;
@@ -289,7 +355,6 @@ nav{
 .ana-plant button {
   position: relative;
   z-index: 1;
-
 }
 
 .ana-plant h3{
@@ -297,12 +362,10 @@ nav{
     color: #fff;
     font-weight: 600;
 }
-
 .ana-plant button a{
      font-size: 1rem;
     font-weight: 600;
     color: #fff;
-
 }
 
 .zabo-plant{
@@ -312,14 +375,14 @@ nav{
     height: 423px;
     display: flex;
   flex-direction: column;    
-  align-items: center;     
+  align-items: center;
   justify-content: center;    
   text-align: center; 
   border-radius: 22px;
   margin-left: 28px;
   position: relative;
   overflow: hidden;
-    
+  width: 753px;
 }
 .zabo-plant::before {
   content: "";
@@ -355,16 +418,40 @@ nav{
     
 }
 
-.left-blocks{
-    width: 367px;
+
+
+/*Deals Section Responsive*/
+@media screen and (max-width: 576px) {
+
+    .deals-text-content{
+    margin-bottom: 50px;
 }
-.right-block{
-    width: 753px;
+    .blocks{
+    display: flex;
+    flex-direction: column;
 }
 
-.blocks{
-    display: flex;
+.zabo-plant{
+    margin-left: 0px;
+   width: auto;
+   height: 220px;
 }
+.right-block{
+    margin-top: 24px;
+}
+.zabo-plant h3{
+    font-size: 20px;
+}
+.zabo-plant button a{
+    font-size: 16px;
+
+}
+.ana-plant, .bloom-plant{
+    margin-right: 10px;
+}
+
+}
+
 
 /*join section styles*/
 
@@ -418,7 +505,7 @@ nav{
 
 .main-footer{
     margin: 0 auto;
-    width: 1140px;
+    max-width: 1140px;
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -467,3 +554,24 @@ nav{
     padding-bottom: 32px;
 }
 
+/*Main footer responsive*/
+
+@media screen and (max-width: 576px) {
+
+    .main-footer{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+.footer-items {
+   
+    
+  }
+   
+}
